@@ -1,0 +1,439 @@
+/*index.css美化首页*/
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式*/
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*以上清除默认格式 // 以后编写网页直接复制该段代码就行*/
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*头部*/
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    margin: 30px auto;
+
+
+}
+
+/* h1 */
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    height: 42px;
+    /* background-color: rgb(212, 210, 68); */
+    margin-left: 70px;
+
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    height: 42px;
+    display: block;
+    /* li内bloclk */
+    line-height: 42px;
+    padding: 0 9px;
+    /* border-color: 2px solid blue; */
+    font-size: 18px;
+    color: 050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索栏 */
+.search {
+    float: left;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    margin-left: 59px;
+}
+
+.search input {
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+    float: left;
+}
+
+/* 控制placeholder */
+.search input::placeholder {
+    font-size: 14;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/btn.png);
+    border: 0;
+    position: absolute;
+    /* 不加absolute网页缩放时按钮会跑到搜索栏下方 */
+}
+
+/* 用户信息 */
+.user {
+
+    float: left;
+    margin-left: 31px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user span {
+    font-size: 16;
+    color: #666666;
+}
+
+.banner {
+    height: 420px;
+    /* 与浏览器同宽度不用给宽 通栏盒子 */
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner .lft {
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    padding: 5px 20px 10px;
+    /* 行高属于控制文字的属性 能继承 */
+    line-height: 44px;
+    font-size: 14px;
+
+}
+
+.banner .lft a {
+    color: #fff;
+}
+
+.banner .lft a:hover {
+    color: #00b4ff;
+}
+
+
+.banner .lft span {
+    float: right;
+}
+
+
+
+
+
+.banner .rt {
+    height: 300px;
+    width: 228px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 50px;
+
+}
+
+.banner .rt h2 {
+    background-color: #9bceea;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner .rt .content {
+    padding: 0 14px;
+}
+
+.banner .rt .content dl {
+    padding: 12px 0;
+    border-bottom: 2px #e5e5e5 solid;
+}
+
+.banner .rt dt span {
+
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.banner .rt dt {
+    line-height: 20px;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.banner .rt dl {
+    line-height: 20px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.banner .rt .more {
+    margin: 4px auto;
+    display: block;
+    /* 给超链接加宽 用block */
+    width: 200px;
+    height: 40px;
+    border: #004aff 1px solid;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: #004aff;
+    font-weight: bold;
+}
+
+/* 精品推荐栏 注意横向间距添加方法 边框（竖线）加在a上 
+不要设置单元宽度 设置a的内边距即可 */
+.goods {
+    background-color: #fff;
+    height: 60px;
+    margin-top: 8px;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+    padding: 21px 30px 21px 40px;
+    line-height: 16px;
+}
+
+.goods h3 {
+    float: left;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.goods ul {
+    margin-left: 32px;
+    float: left;
+
+}
+
+.goods ul li {
+    float: left;
+
+}
+
+.goods ul li a {
+
+    border-left: solid #bfbfbf 1px;
+    padding: 0 35px;
+    color: #050505;
+}
+
+.goods a {
+    float: right;
+    color: #00a4ff;
+
+}
+
+/* <!-- 区域高度由数据多少决定 --> */
+
+/* 精品课程 */
+.box .title {
+    position: relative;
+    margin-top: 37px;
+    height: 30px;
+    /* background-color: burlywood; */
+
+
+}
+
+.box .title h2 {
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box .title a {
+    position: absolute;
+    /* right: 0; */
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+
+}
+
+.box li {
+    margin-top: 20px;
+    margin-right: 15px;
+    float: left;
+    /* background-color: pink; */
+    width: 228px;
+    height: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+}
+
+
+
+/* 5的倍数 nth-child  */
+.box li:nth-child(5n) {
+    margin-right: 0px;
+
+}
+
+.content h3 {
+    margin: 25px;
+    width: 184px;
+    height: 32px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #050505;
+}
+
+.content span {
+    width: 121px;
+    height: 11px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ff7c2d;
+}
+
+.content p {
+    margin: 0 20px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #fff;
+    height: 300px;
+    padding-top: 30px;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+
+}
+
+footer .left p {
+    height: 30px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #666666;
+}
+
+
+footer .left a {
+
+    margin-top: 25px;
+    width: 120px;
+    height: 36px;
+    /* a是行内 尺寸不生效 */
+    display: block;
+    border: solid 1px #00a4ff;
+
+    font-family: MicrosoftYaHei;
+
+    /* a中的文字居中 */
+    line-height: 36px;
+    text-align: center;
+    /* 要给行高 然后利用文本居中 */
+
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+footer .right dl {
+    float: left;
+    margin-left: 10px;
+    margin-left: 120px;
+}
+
+footer .right dl dt {
+
+    width: 79px;
+    height: 17px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 20px;
+
+}
+
+footer .right dl {
+
+    width: 95px;
+    height: 96px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #333333;
+}
