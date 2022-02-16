@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    /* 背景渐变 */
+    background: linear-gradient(200deg, #005bea, #00c6f6);
+}
+
+#plane {
+    color: #fff;
+    font-size: 70px;
+    /* 绝对定位 */
+    position: absolute;
+    /* 弹性布局 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-image: url(../美国阿波罗.png);
+    background-size: contain;
+}
